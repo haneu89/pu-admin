@@ -1,0 +1,35 @@
+@import '~bootstrap/scss/bootstrap';
+
+$layout: (
+  nav-width: 230px,
+  nav-color: #404E67,
+  header-height: 56px,
+);
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.left-col {
+  width: map-get($layout, nav-width);
+  background-color: map-get($layout, nav-color);
+}
+
+
+.right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .main-header {
+    height: map-get($layout, header-height);
+    box-shadow: 0 0 11px rgba(0,0,0,0.13);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content-wrapper {
+    background-color: #F5F6FA;
+  }
+}
