@@ -8,28 +8,56 @@ $layout: (
 
 .body {
   width: 100%;
-  display: flex;
   flex-direction: row;
 }
-.left-col {
-  width: map-get($layout, nav-width);
-  background-color: map-get($layout, nav-color);
-}
-
-
-.right-col {
-  flex: 1;
+.top-area{
+  width:100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
+  .left-header{
+    width: map-get($layout, nav-width);
+    background-color: map-get($layout, nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding:15px;
+  }
+  .right-header{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+  }
   .main-header {
-    height: map-get($layout, header-height);
     box-shadow: 0 0 11px rgba(0,0,0,0.13);
     padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .content-wrapper {
+
+}
+.bottom-area{
+  width:100%;
+  display: flex;
+  
+  .left-body {
+    width: map-get($layout, nav-width);
+    background-color: map-get($layout, nav-color);
+    
+    .menu-panel{
+      text-transform: uppercase;
+      color: #ccc;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 15px 15px;
+    }
+    .card{
+      background-color: #404E67;
+    }
+  }
+  .right-body {
+    flex:1;
+    padding:15px;
     background-color: #F5F6FA;
   }
 }

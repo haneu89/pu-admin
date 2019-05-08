@@ -10,20 +10,156 @@
 </head>
 <body>
   <div class="body">
-    <div class="left-col">
-      logo-areas
-    </div>
-    <div class="right-col">
-      <div class="main-header">
-        <div class="gretting">
-          ㅁㅁㅁ고객님 안녕하십니까
-        </div>
-        <div class="nav-menu">
-          <span>비밀번호 변경</span>
-          <span>로그아웃</span>
+    <div class="top-area">
+      <div class="left-header">
+          로고사진
+          <a href="#menu" data-toggle="collapse">icon</a>
+      </div>
+      <div class="right-header">
+        <div class="main-header">
+          <div class="gretting">
+            ㅁㅁㅁ고객님 안녕하십니까
+          </div>
+          <div class="nav-menu">
+            <span>비밀번호 변경</span>
+            <span>로그아웃</span>
+          </div>
         </div>
       </div>
-      <div class="content-wrapper">
+    </div>
+    <div class="bottom-area">
+      <div id="menu" class="left-col collapsed">
+          
+        <div class="menu-panel">
+            Navigation
+        </div>
+        <div class="accordion" id="menuList">
+          <div class="list">
+            <div class="card-header" id="listOne">
+              <div class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  메뉴1
+                </button>
+              </div>
+            </div>
+        
+            <div id="collapseOne" class="collapse" data-parent="#menuList">
+              <div class="card-body">
+                1
+              </div>
+              <div class="card-body">
+                2
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="listTwo">
+              <div class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  메뉴2
+                </button>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#menuList">
+                <div class="card-body">
+                  1
+                </div>
+                <div class="card-body">
+                  2
+                </div>  
+                <div class="card-body">
+                  3
+                </div>                
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="listThree">
+              <div class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  메뉴3
+                </button>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#menuList">
+              <div class="card-body">
+                  1
+              </div>
+              <div class="card-body">
+                2
+              </div>                 
+            </div>
+          </div>
+        
+          <div class="menu-panel">
+              분류2
+          </div>
+        
+          <div class="card">
+            <div class="card-header" id="listFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  메뉴4
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#menuList">
+              <div class="card-body">
+                1
+              </div>
+              <div class="card-body">
+                2
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="listFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  메뉴5
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" data-parent="#menuList">
+              <div class="card-body">
+                1
+              </div>
+              <div class="card-body">
+                2
+              </div>  
+              <div class="card-body">
+                3
+              </div>                
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="listThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  메뉴6
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#menuList">
+              <div class="card-body">
+                1
+              </div>
+              <div class="card-body">
+                2
+              </div>                 
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel">
+            분류3
+        </div>
+      </div>
+      <div class="right-col content-wrapper">
+        -------버그-------<br>
+        1.브라우저 창 width값을 너무 많이 축소하면 깨짐현상<br>
+        2.icon 을 눌르면 메뉴바가 사라지는데 첫번째 클릭은 실행이 안되고 두번째 클릭부터 실행이됨<br>
+        애초부터 안보이게 했다가 나타나게 하는건 첫번째 클릭부터 잘됨<br>
+        메뉴바가 사라지는 순간은 약간의 딜레이가 있어보임 , 다시 생기게하는건 딜레이없이 바로됨<br>
+        <br><br>
         
       </div>
     </div>
