@@ -40,7 +40,7 @@ $layout: (
   width:100%;
   display: flex;
   
-  .left-body {
+  .left-col {
     width: map-get($layout, nav-width);
     background-color: map-get($layout, nav-color);
     
@@ -55,7 +55,7 @@ $layout: (
       background-color: #404E67;
     }
   }
-  .right-body {
+  .right-col {
     flex:1;
     padding:15px;
     background-color: #F5F6FA;
