@@ -61,3 +61,34 @@ $layout: (
     background-color: #F5F6FA;
   }
 }
+@media screen and (max-width: 768px) {
+  // 모바일
+  .top-area{
+    flex-direction:column;
+    .left-header{
+      width:100%;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      div:nth-child(1){ flex-grow: 3; }
+      div:nth-child(2){ flex-grow: 2; }
+    }
+    // .logoimg{ flex-grow: 3; }
+    // .menuBtn{ flex-grow: 2; }
+    .right-header{
+      display: none; 
+    }
+  }
+  .bottom-area{
+    .left-col{
+      width:100px;
+      .card-header{
+        padding: 12px 5px 12px 5px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+// pc
+  
+}
