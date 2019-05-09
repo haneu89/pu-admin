@@ -10,12 +10,30 @@ $layout: (
   width: 100%;
   flex-direction: row;
 }
+.accordion{
+  .card{
+    button{
+      padding:0;
+    }
+    .card-header{
+      padding:10px 15px 10px 15px;
+    }
+    .card-body{
+      padding:10px 25px 10px 25px;
+    }
+    .font{
+      color:#fdfdfd;
+      font-family: 'Cabin', sans-serif;
+    }
+  }
+}
+
 .top-area{
   width:100%;
   display: flex;
   flex-direction:row;
   .top-color{
-    color: #ffffff;
+    color: lightgray;
   }
   .left-header{
     width: map-get($layout, nav-width);
@@ -92,7 +110,7 @@ $layout: (
   }
   .bottom-area{
     .left-col{
-      width:100px;
+      width:120px;
       .card-header{
         padding: 12px 5px 12px 5px;
       }
